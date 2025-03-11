@@ -2,11 +2,13 @@
 FROM node:latest
 
 # set a working directory
-WORKDIR /src
+WORKDIR /backend
+
 
 # Copy across project configuration information
 # Install application dependencies
-COPY package*.json /src/
+COPY backend/package*.json /backend/
+
 
 # Ask npm to install the dependencies
 RUN npm install -g supervisor && npm install && npm install supervisor
