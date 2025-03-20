@@ -7,7 +7,7 @@ WORKDIR /backend
 
 # Copy across project configuration information
 # Install application dependencies
-COPY backend/package*.json /backend/
+COPY package*.json /backend/
 
 
 # Ask npm to install the dependencies
