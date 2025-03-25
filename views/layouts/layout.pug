@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    title Food Bank
+    link(rel="stylesheet", href="/styles.css")
+  body
+    header
+      nav
+        a(href="/") Home
+        a(href="/donate") Donate
+        a(href="/reserve") Reserve
+        a(href="/collect") Collect
+        a(href="/available") Available Food
+        a(href="/tracking") Track Donations
+    block content  // This will be filled by child pages
+
+doctype html
+html
+  head
+    title Food Bank
+    link(rel="stylesheet", href="/styles.css")
+  body
+    include ../components/navbar
+    block content

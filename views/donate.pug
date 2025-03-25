@@ -1,0 +1,12 @@
+extends ../layouts/layout
+
+block content
+  h2 Donate Food
+  form(action="/donate" method="POST")
+    label(for="name") Food Name:
+    input(type="text" name="name" required)
+
+    label(for="quantity") Quantity:
+    input(type="number" name="quantity" required)
+
+    button(type="submit") Submit Donation

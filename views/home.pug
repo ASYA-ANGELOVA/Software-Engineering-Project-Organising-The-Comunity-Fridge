@@ -1,0 +1,14 @@
+extends ../layouts/layout
+
+block content
+  h1 Welcome to the Food Bank
+  p Helping reduce food waste and support communities.
+
+  h2 Recent Donations
+  ul
+    each item in donations
+      li #{item.name} - #{item.quantity} available
+
+  a(href="/donate") Donate Food
+  a(href="/available") View Available Food
+ 

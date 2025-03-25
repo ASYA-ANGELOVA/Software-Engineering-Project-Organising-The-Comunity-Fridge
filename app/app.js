@@ -46,3 +46,9 @@ app.get("/hello/:name", function(req, res) {
 app.listen(3000,function(){
     console.log(`Server running at http://127.0.0.1:3000/`);
 });
+
+app.set("view engine", "pug");
+app.set("views","views");
+
+app.get("/", (req, res, next))
+    res.status(200).render("home");
